@@ -2,6 +2,226 @@
 html {
     scroll-behavior: smooth;
 }
+/* ==========================================
+   SEÇÃO - VISITA A EUGÊNIO DE MELO
+   ========================================== */
+
+.visita-eugenio-section {
+    width: 100%;
+    padding: 90px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.visita-eugenio-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* ==========================================
+   TEXTO
+   ========================================== */
+
+.visita-eugenio-content {
+    width: 50%;
+}
+
+.visita-eugenio-label {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.visita-eugenio-title {
+    margin: 0 0 25px 0;
+
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.visita-eugenio-text {
+    margin-bottom: 18px;
+
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.visita-eugenio-text strong {
+    font-weight: 700;
+}
+
+/* ==========================================
+   CARROSSEL
+   ========================================== */
+
+.visita-eugenio-carousel {
+    width: 50%;
+    min-width: 0;
+}
+
+.visita-eugenio-swiper {
+    width: 100%;
+    height: 430px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.visita-eugenio-swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visita-eugenio-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* ==========================================
+   BOTÕES
+   ========================================== */
+
+.visita-eugenio-prev,
+.visita-eugenio-next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 0.3s ease;
+}
+
+.visita-eugenio-prev {
+    left: 15px;
+}
+
+.visita-eugenio-next {
+    right: 15px;
+}
+
+.visita-eugenio-prev i,
+.visita-eugenio-next i {
+    font-size: 27px;
+}
+
+.visita-eugenio-prev:hover,
+.visita-eugenio-next:hover {
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* ==========================================
+   PAGINAÇÃO
+   ========================================== */
+
+.visita-eugenio-pagination {
+    position: absolute;
+    bottom: 15px !important;
+
+    z-index: 20;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .visita-eugenio-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .visita-eugenio-content {
+        width: 100%;
+    }
+
+    .visita-eugenio-carousel {
+        width: 100%;
+    }
+
+    .visita-eugenio-title {
+        font-size: 36px;
+    }
+
+    .visita-eugenio-swiper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .visita-eugenio-section {
+        padding: 60px 0;
+    }
+
+    .visita-eugenio-container {
+        width: 90%;
+    }
+
+    .visita-eugenio-title {
+        font-size: 30px;
+    }
+
+    .visita-eugenio-text {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .visita-eugenio-swiper {
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .visita-eugenio-prev,
+    .visita-eugenio-next {
+        width: 38px;
+        height: 38px;
+    }
+
+    .visita-eugenio-prev i,
+    .visita-eugenio-next i {
+        font-size: 23px;
+    }
+}
+
 .linkfooter{
     text-decoration: underline;
 }
@@ -889,4 +1109,5 @@ section {
     justify-content: start;
     gap: 30px;
 }
+
 }
