@@ -251,6 +251,128 @@
         </div>
     </div>
 </section>
+
+<!-- VISITA A EUGÊNIO DE MELO -->
+
+<section class="visita-eugenio-section" id="eugenio">
+
+    <div class="visita-eugenio-container">
+
+        <!-- TEXTO -->
+        <div class="visita-eugenio-content" data-aos="fade-right">
+
+            <p class="visita-eugenio-label">
+                Território do Encontro
+            </p>
+
+            <h1 class="visita-eugenio-title">
+                Conhecendo Eugênio de Melo
+            </h1>
+
+            <p class="visita-eugenio-text">
+                Como parte das atividades do nosso projeto de extensão,
+                realizamos uma visita ao bairro de Eugênio de Melo, em São
+                José dos Campos (SP), com o objetivo de estabelecer nosso
+                primeiro contato com a comunidade e conhecer mais
+                profundamente a história, a cultura e as memórias que fazem
+                parte da identidade do bairro.
+            </p>
+
+            <p class="visita-eugenio-text">
+                Durante o percurso, conhecemos a
+                <strong>Biblioteca Helena Molina</strong> e a
+                <strong>Casa de Cultura Rancho do Tropeiro</strong>, onde
+                tivemos contato com diferentes aspectos da cultura e da
+                história local. Também visitamos o
+                <strong>Armazém do Carlinhos</strong>, que reúne objetos
+                antigos e memórias do cotidiano do bairro, e finalizamos
+                nossa visita na antiga
+                <strong>Estação Ferroviária de Eugênio de Melo</strong>,
+                importante marco da história da região.
+            </p>
+
+            <p class="visita-eugenio-text">
+                Mais do que conhecer pontos históricos, a visita nos
+                permitiu perceber a importância da preservação da memória
+                local e compreender que a história de uma comunidade também
+                está presente em seus espaços, objetos, costumes e relatos.
+                Esse primeiro contato foi fundamental para aproximar o
+                projeto da população e criar uma base para as próximas
+                atividades de extensão.
+            </p>
+
+        </div>
+
+
+        <!-- CARROSSEL -->
+        <div class="visita-eugenio-carousel" data-aos="fade-left">
+
+            <div class="swiper visita-eugenio-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/biblioteca1.jpeg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/biblioteca2.jpeg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/biblioteca3.jpeg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/tropeiro1.jpeg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/tropeiro2.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/tropeiro3.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/armazem1.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/armazem2.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/img/estaao1.jpeg">
+                    </div>
+                </div>
+
+                <!-- SETA ESQUERDA -->
+                <div class="visita-eugenio-prev">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+
+                <!-- SETA DIREITA -->
+                <div class="visita-eugenio-next">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+
+                <!-- BOLINHAS -->
+                <div class="swiper-pagination visita-eugenio-pagination"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- TESTI START -->
     <section class="testi" id="impact">
         <div class="container testi-wrapper">
@@ -323,6 +445,37 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+<script>
+
+const visitaEugenioSwiper = new Swiper(".visita-eugenio-swiper", {
+
+    loop: true,
+
+    slidesPerView: 1,
+
+    spaceBetween: 0,
+
+    speed: 700,
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+    },
+
+    navigation: {
+        nextEl: ".visita-eugenio-next",
+        prevEl: ".visita-eugenio-prev"
+    },
+
+    pagination: {
+        el: ".visita-eugenio-pagination",
+        clickable: true
+    }
+
+});
+
+</script>
+    
 </body>
 
 </html>
